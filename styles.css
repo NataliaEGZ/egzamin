@@ -1,0 +1,16 @@
+.slider-img {
+   min-height: 700px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.sliderThree {
+    background-image: url("https://marmotamaps.com/de/fx/wallpaper/download/faszinationen/Marmotamaps_Wallpaper_MMM_Museum_Desktop_1920x1080.jpg");
+}
+.sliderTwo {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg");
+}
+.sliderOne {
+    background-image:url("https://marmotamaps.com/de/fx/wallpaper/download/faszinationen/Marmotamaps_Wallpaper_Berchtesgaden_Desktop_1920x1080.jpg");
+}

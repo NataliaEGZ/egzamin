@@ -1,0 +1,83 @@
+$primaryColor: rgb(255, 245, 101);
+$secondaryColor: rgb(4, 215, 67);
+
+$size-sm: 5px;
+$size-md: 12px;
+$size-lg: 17px;
+$size-xl: 32px;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin square($squareColor, $squareWidth, $squareHeight) {
+    background-color: $squareColor;
+    width:$squareWidth;
+    height: $squareHeight;
+}
+
+.wrapper {
+    background-color: $primaryColor;
+    @include flexCenter;
+    gap:25px;
+    padding: $size-xl;
+
+    .square {
+        @include square($secondaryColor,200px,200px)     
+    }
+    .square:nth-child(3) {
+        @include flexCenter;
+        gap:10px;
+        .childSquare {
+           @include square(red,50px,50px);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// .wrapper {
+//     background-color: $primaryColor;
+//     padding: $size-lg;
+//     margin: $size-sm;
+//     h1 {
+//         color: $secondaryColor;
+//     }
+// }
+
+// .about {
+//     background-color: $secondaryColor;
+//     padding: $size-lg;
+//     margin: $size-sm;
+//     ul {
+//         background-color: $primaryColor;
+//         padding: $size-lg;
+//         color: $secondaryColor;
+//     }
+// }
+
+// footer {
+//     background-color: $primaryColor;
+//     padding: $size-lg;
+//     color: $secondaryColor;
+// }
+
+
+@mixin primaryButton {
+    width:160px;
+    height: 35px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.primaryBtn {
+    @include primaryButton;
+}
